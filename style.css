@@ -1,0 +1,92 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(imgs/fundo-home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(5, 5, 5, 0.808);
+    padding: 10px;
+
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav #logo {
+    width: 100px;
+}
+
+.menu_btn {
+    background: none;
+    border: none;
+    margin: 20px;
+
+    color: white;
+    font-size: 15px;
+}
+
+.menu_btn:active {
+    animation: diminuirAumentar .2s ease;
+}
+
+.close {
+    display: none;
+}
+
+.menu {
+    background-color: #3333339c;
+    height: 100%;
+    display: flex;
+    
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main img {
+    width: 300px;
+    margin: 0 auto;
+}
+
+main p {
+    color: white;
+    font-size: .8rem;
+    padding: 5px;
+}
+
+/* Animações */
+@keyframes diminuirAumentar {
+
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(0.5);
+    }
+
+    50% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
