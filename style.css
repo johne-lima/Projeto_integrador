@@ -7,10 +7,12 @@
 }
 
 body {
-    background-image: url(imgs/fundo-home.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.623), rgb(0, 0, 0)), url("imgs/fundo-home.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 50%;
+    background-position: 60%;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 nav {
@@ -20,6 +22,7 @@ nav {
     justify-content: space-between;
     background-color: rgba(5, 5, 5, 0.808);
     padding: 10px;
+    height: 70px;
 
     position: sticky;
     top: 0;
@@ -52,17 +55,25 @@ nav #logo {
     background-color: #3333339c;
     height: 100%;
     display: flex;
-    
+
 }
 
 main {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
-main img {
-    width: 300px;
+main .logo {
+    width: 250px;
     margin: 0 auto;
+}
+
+main .texto-primario {
+        margin-block-start: -30px;
+
 }
 
 main p {
@@ -70,6 +81,60 @@ main p {
     font-size: .8rem;
     padding: 5px;
 }
+
+main .contato {
+    background-color: #c99404;
+    margin-block-start: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 50%;
+    
+}
+
+.contato img{
+    width: 20px;
+}
+
+footer {
+    background-color: #211E1B;
+}
+
+footer .descricao {
+    padding-block-start: 5px;
+    margin-block-start: 20px;
+}
+
+footer p {
+    text-align: center;
+    font-style: italic;
+    color: #D9D9D9;
+}
+
+footer h2 {
+    color: #c99404;
+    margin-inline-start: 30px;
+    margin-block-start: 10px;
+    font-size: .8rem;
+}
+
+footer ul {
+    margin-block-start: 10px;
+    margin-inline-start: 30px;
+    padding-block-end: 20px;
+}
+
+footer li {
+    font-size: .7rem;
+}
+
+footer img {
+    width: 150px;
+    margin-inline-start: 25%;
+}
+
 
 /* Animações */
 @keyframes diminuirAumentar {
