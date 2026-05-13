@@ -95,9 +95,8 @@ main {
     
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    gap: 10px;
+    height: 513px;
 }
 
 main .logo {
@@ -106,7 +105,7 @@ main .logo {
 }
 
 main .texto-primario {
-        margin-block-start: -30px;
+        margin-block-start: 30px;
 
 }
 
@@ -125,6 +124,7 @@ main .contato {
     justify-content: center;
     gap: 5px;
     padding: 10px;
+    margin: 50px auto;
     border-radius: 10px;
     border: none;
     width: 50%;
