@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 *,
 *::after,
 *::before {
@@ -7,12 +9,8 @@
 }
 
 body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.623), rgb(0, 0, 0)), url("imgs/fundo-home.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 60%;
     color: white;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 nav {
@@ -20,14 +18,14 @@ nav {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(5, 5, 5, 0.808);
+    background-color: rgb(0, 0, 0);
     padding: 10px;
     height: 70px;
 
     position: sticky;
     top: 0;
     left: 0;
-    z-index: 1000;
+
 }
 
 nav #logo {
@@ -52,13 +50,49 @@ nav #logo {
 }
 
 .menu {
-    background-color: #3333339c;
-    height: 100%;
+    background-color: #1a1919d8;
     display: flex;
+    gap: 10px;
+    position: absolute;
+    margin-block-start: 70px;
+    top: 0;
+    right: 0;
 
+    opacity: 0;
+    visibility: hidden;
+
+    transform: scale(-20px);
+    transition: 0.4s;
+}
+
+.menu.active {
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateY(0);
+}
+
+.menu li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu .home {
+    color: #c99404;
+    text-decoration: underline;
 }
 
 main {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.452), rgb(0, 0, 0)), url("../imgs/fundo-home.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 60%;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -80,13 +114,16 @@ main p {
     color: white;
     font-size: .8rem;
     padding: 5px;
+    margin: 0 10px;
 }
 
 main .contato {
-    background-color: #c99404;
+    background-color: #ffbb008f;
     margin-block-start: 10px;
+    margin-block-end: 15px;
     display: flex;
     justify-content: center;
+    gap: 5px;
     padding: 10px;
     border-radius: 10px;
     border: none;
@@ -100,22 +137,26 @@ main .contato {
 
 footer {
     background-color: #211E1B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 footer .descricao {
-    padding-block-start: 5px;
-    margin-block-start: 20px;
+    padding-block-start: 20px;
 }
 
 footer p {
     text-align: center;
     font-style: italic;
+    font-weight: bolder;
     color: #D9D9D9;
 }
 
 footer h2 {
     color: #c99404;
-    margin-inline-start: 30px;
+    margin-inline-start: -190px;
     margin-block-start: 10px;
     font-size: .8rem;
 }
@@ -128,11 +169,11 @@ footer ul {
 
 footer li {
     font-size: .7rem;
+    color: white;
 }
 
 footer img {
     width: 150px;
-    margin-inline-start: 25%;
 }
 
 
