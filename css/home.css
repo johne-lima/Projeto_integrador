@@ -95,7 +95,7 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 60%;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -108,7 +108,7 @@ main .logo {
 }
 
 main .texto-primario {
-        margin-block-start: 30px;
+    margin-block-start: 30px;
 }
 
 main p {
@@ -130,10 +130,10 @@ main .contato {
     border-radius: 10px;
     border: none;
     width: 50%;
-    
+
 }
 
-.contato img{
+.contato img {
     width: 20px;
 }
 
@@ -179,7 +179,7 @@ footer ul {
 
 footer li {
     font-size: .7rem;
-    padding-inline-end:105px;
+    padding-inline-end: 105px;
     padding-block-start: 10px;
 }
 
