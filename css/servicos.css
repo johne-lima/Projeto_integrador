@@ -49,8 +49,31 @@ nav #logo {
     animation: diminuirAumentar .2s ease;
 }
 
-.close {
+.menu.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.fa-bars,
+.fa-x {
     display: none;
+}
+
+.fa-bars.active,
+.fa-x.active {
+    display: block;
+}
+
+/* Ícones */
+
+.icon-menu,
+.icon-close {
+    display: none !important;
+}
+
+.active-icon {
+    display: block !important;
 }
 
 .menu {
@@ -167,8 +190,8 @@ main span {
     height: 60px;
     padding-block-start: 10px;
     font-size: .8rem;
-    top: 57%;
-    left: 50%;
+    top: 465px;
+    left: 160px;
     border-bottom: 1px solid #ffcc00;
     color: #ffcc00;
     font-family: 'Kaushan Script';
