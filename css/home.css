@@ -165,12 +165,6 @@ footer h2 {
     text-decoration: underline;
 }
 
-footer h2::after {
-    content: '';
-    width: 100%;
-    border: 1px solid #c99404;
-}
-
 footer ul {
     margin-block-start: 10px;
     margin-inline-start: 30px;
