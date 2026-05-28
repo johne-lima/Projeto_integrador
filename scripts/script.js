@@ -11,3 +11,27 @@ menuBtn.addEventListener('click', () => {
     closeIcon.classList.toggle('active-icon')
 
 })
+
+new Splide('.splide', {
+  type: 'loop',
+  autoplay: true,
+  interval: 2000,
+
+  perPage: 3,
+  focus: 'center',
+  gap: '1rem',
+  padding: '15%',
+
+  breakpoints: {
+
+    768: {
+      perPage: 2,
+    },
+
+    480: {
+      perPage: 2,
+    }
+
+  }
+
+}).mount()

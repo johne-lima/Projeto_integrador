@@ -123,10 +123,10 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 513px;
 }
 
 main .logo {
+    margin-block-start: 800px;
     width: 250px;
     margin: 0 auto;
 }
@@ -163,6 +163,33 @@ main .contato {
 
 .contato img {
     width: 20px;
+}
+
+
+
+.splide__slide {
+    transition: .4s;
+    transform: scale(.9);
+    filter: blur(2px);
+    opacity: .6;
+}
+
+/* Slide central */
+
+.splide__slide.is-active {
+    transform: scale(1);
+    filter: blur(0);
+    opacity: 1;
+}
+
+.splide__slide img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.splide__track {
+    overflow: visible;
 }
 
 footer {
@@ -234,6 +261,19 @@ footer img {
     100% {
         transform: scale(1.2);
     }
+}
+
+@media (max-width: 768px) {
+
+    .splide__slide img {
+        height: 200px;
+    }
+
+    .splide__slide {
+        transform: scale(.95);
+        filter: blur(1px);
+    }
+
 }
 
 @media (min-width: 600px) {
