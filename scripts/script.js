@@ -13,25 +13,25 @@ menuBtn.addEventListener('click', () => {
 })
 
 new Splide('.splide', {
-  type: 'loop',
-  autoplay: true,
-  interval: 2000,
+    type: 'loop',
+    autoplay: true,
+    interval: 2000,
 
-  perPage: 3,
-  focus: 'center',
-  gap: '1rem',
-  padding: '15%',
+    perPage: 3,
+    focus: 'center',
+    gap: '1rem',
+    padding: '15%',
 
-  breakpoints: {
+    breakpoints: {
 
-    768: {
-      perPage: 2,
-    },
+        768: {
+            perPage: 1.001,
+        },
 
-    480: {
-      perPage: 2,
+        480: {
+            perPage: 1.001,
+        }
+
     }
-
-  }
 
 }).mount()
