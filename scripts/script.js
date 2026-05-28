@@ -26,6 +26,8 @@ new Splide('.splide', {
 
         768: {
             perPage: 1.001,
+            gap: '1rem',
+            
         },
 
         480: {

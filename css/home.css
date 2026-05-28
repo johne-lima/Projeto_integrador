@@ -272,7 +272,7 @@ main .contato {
     background: #c99404;
 
     box-shadow:
-        0 0 20px rgba(201,148,4,.6);
+        0 0 20px rgba(201, 148, 4, .6);
 }
 
 .splide__arrow:hover svg {
@@ -291,9 +291,9 @@ main .contato {
     width: 50px;
     height: 50px;
 
-    background: rgba(0,0,0,.6);
+    background: rgba(0, 0, 0, .6);
 
-    border: 2px solid rgba(255,255,255,.1);
+    border: 2px solid rgba(255, 255, 255, .1);
 
     backdrop-filter: blur(10px);
 
@@ -304,7 +304,7 @@ main .contato {
     transition: .3s;
 
     box-shadow:
-        0 5px 20px rgba(0,0,0,.5);
+        0 5px 20px rgba(0, 0, 0, .5);
 }
 
 footer {
@@ -387,7 +387,7 @@ footer img {
     .splide__slide {
         transform: scale(.95);
         filter: blur(1px);
-    } 
+    }
 }
 
 @media (min-width: 600px) {
@@ -437,7 +437,7 @@ footer img {
     /* MAIN */
 
     main {
-        height: 700px;
+        height: 100%;
         text-align: center;
         align-items: center;
         padding: 20px;
