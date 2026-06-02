@@ -118,6 +118,9 @@ nav #logo {
 .servicos {
     padding: 30px 20px 60px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.555), rgb(0, 0, 0)), url("../imgs/fundo-servicos.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .hero-servicos {
@@ -161,11 +164,13 @@ nav #logo {
     backdrop-filter: blur(8px);
 
     transition: .3s;
+    cursor: pointer;
 }
 
 .servico-card:hover {
     transform: translateY(-5px);
     border-color: #c99404;
+    animation: preencher .6s ease forwards;
 }
 
 .servico-card i {
@@ -202,6 +207,12 @@ nav #logo {
     margin-bottom: 10px;
 }
 
+.subtitulo-comparacao {
+    text-align: center;
+    color: #bdbdbd;
+    margin-bottom: 30px;
+}
+
 .linha {
     width: 100px;
     height: 3px;
@@ -217,6 +228,13 @@ nav #logo {
 
 .imagem {
     position: relative;
+    overflow: hidden;
+
+    background: linear-gradient(
+        135deg,
+        rgba(255,255,255,.08),
+        rgba(255,255,255,.02)
+    );
 }
 
 .imagem img {
@@ -228,6 +246,7 @@ nav #logo {
         0 0 20px rgba(201,148,4,.3),
         0 10px 30px rgba(0,0,0,.5);
 }
+
 
 .badge {
     position: absolute;
@@ -242,6 +261,25 @@ nav #logo {
 
     padding: 8px 15px;
     border-radius: 30px;
+}
+
+.resultado {
+    position: absolute;
+
+    bottom: 15px;
+    right: 15px;
+
+    background: #25d366;
+
+    color: white;
+
+    padding: 8px 15px;
+
+    border-radius: 30px;
+
+    font-size: .8rem;
+
+    font-weight: bold;
 }
 
 .seta {
@@ -357,4 +395,34 @@ footer a {
 
 footer img {
     width: 150px;
+}
+
+/* Animações */
+
+@keyframes preencher {
+    from {
+        background-color: rgba(255,255,255,.05);
+    }
+    to {
+        background-color: #eec452;
+        color: black;
+    }   
+}
+
+@media (min-width: 768px) {
+
+    .comparacao-card {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .seta {
+        font-size: 3rem;
+    }
+
+    .seta i {
+        transform: rotate(-90deg);
+    }
 }

@@ -13,7 +13,8 @@ menuBtn.addEventListener('click', () => {
 })
 
 new Splide('.splide', {
-    type: 'loop',
+    type: 'slide',
+    rewind: true,
     autoplay: true,
     interval: 2000,
 
@@ -21,13 +22,16 @@ new Splide('.splide', {
     focus: 'center',
     gap: '1rem',
     padding: '15%',
+    drag: true,
+    snap: true,
+    updateOnMove: true,
+    waitForTransition: true,
 
     breakpoints: {
 
         768: {
-            perPage: 1.001,
-            gap: '1rem',
-            
+            perPage: 1,
+            padding: '10%',
         },
 
         480: {

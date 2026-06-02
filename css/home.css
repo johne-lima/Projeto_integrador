@@ -129,8 +129,16 @@ main .logo {
     margin: 0 auto;
 }
 
+main h1 {
+    font-size: .8rem;
+    text-align: center;
+    color: #c99404;
+    margin-bottom: 20px;
+}
+
 main .texto-primario {
     margin-block-start: 30px;
+    font-size: .9rem;
 }
 
 main p {
@@ -180,6 +188,11 @@ main button {
   display: flex;
   align-items: center;
 
+}
+
+.label span {
+  margin-left: 10px;
+  font-size: 17px;
 }
 
 .transition {
@@ -295,10 +308,6 @@ button:active {
         0 10px 30px rgba(0, 0, 0, .5);
 
     transition: .4s;
-}
-
-.splide__track {
-    overflow: visible;
 }
 
 .splide__arrow svg {
@@ -420,6 +429,8 @@ footer img {
     }
 }
 
+
+
 @media (max-width: 768px) {
 
     .splide__slide img {
@@ -427,8 +438,8 @@ footer img {
     }
 
     .splide__slide {
-        transform: scale(.95);
-        filter: blur(1px);
+        transform: none;
+        filter: none;
     }
 }
 
