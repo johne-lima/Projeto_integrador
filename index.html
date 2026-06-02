@@ -4,16 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JR Funilaria</title>
+    <meta name="description"
+        content="JR Funilaria e Pintura em São Paulo. Especializada em funilaria, pintura automotiva, restauração e reparos com acabamento profissional.">
+
+
+    <title>JR Funilaria e Pintura | Funilaria, Pintura e Restauração Automotiva em SP</title>
     <link rel="stylesheet" href="css/home.css">
     <script src="scripts/script.js" defer></script>
 
     <!-- ICONES -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -26,11 +25,32 @@
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/js/splide.min.js"></script>
     <!-- FIM DO SPLIDE -->
 
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "AutoBodyShop",
+            "name": "JR Funilaria e Pintura",
+            "telephone": "+55 11 96070-8547",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Rua Otacílio de Albuquerque, 82",
+                "addressLocality": "São Paulo",
+                "addressRegion": "SP",
+                "addressCountry": "BR"
+            }
+        }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 </head>
 
 <body>
     <nav>
-        <img src="imgs/logo1.png" id="logo">
+        <a href="index.html">
+            <img src="imgs/logo1.png" id="logo" alt="Logo JR Funilaria e Pintura">
+        </a>
 
         <button class="menu_btn">
             <i class="fa-solid fa-bars icon-menu active-icon"></i>
@@ -39,9 +59,9 @@
 
         <div class="menu">
             <ul>
-                <li><a href="#" class="home">Home</a></li>
+                <li><a href="index.html" class="home">Home</a></li>
                 <li><a href="servicos.html">Serviços</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </div>
     </nav>
@@ -57,11 +77,14 @@
             impecável. O reconhecimento dos clientes vem justamente pela confiança e pela qualidade, porque aqui a meta
             é sempre entregar mais do que o esperado.</p>
 
-        <a href="https://wa.me/5511970798502?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20JR%20Funilaria%20e%20Pintura." target="_blank">
+        <a href="https://wa.me/5511960708547?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20JR%20Funilaria%20e%20Pintura."
+            target="_blank">
             <button>
                 <span class="transition"></span>
                 <span class="gradient"></span>
-                <span class="label"><i class="fa-brands fa-whatsapp" style="color: rgb(6, 131, 39);"></i><p>Fale conosco</p></span>
+                <span class="label"><i class="fa-brands fa-whatsapp" style="color: rgb(6, 131, 39);"></i>
+                    <p>Fale conosco</p>
+                </span>
             </button>
         </a>
 
@@ -69,10 +92,14 @@
         <section class="splide">
             <div class="splide__track">
                 <ul class="splide__list">
-                    <li class="splide__slide"><img src="imgs/carro1.jpg" alt=""></li>
-                    <li class="splide__slide"><img src="imgs/carro2.jpg" alt=""></li>
-                    <li class="splide__slide"><img src="imgs/carro3.jpg" alt=""></li>
-                    <li class="splide__slide"><img src="imgs/carro4.jpg" alt=""></li>
+                    <li class="splide__slide"><img src="imgs/carro1.jpg"
+                            alt="Serviço de funilaria automotiva realizado pela JR Funilaria" loading="lazy"></li>
+                    <li class="splide__slide"><img src="imgs/carro2.jpg" alt="Pintura automotiva profissional"
+                            loading="lazy"></li>
+                    <li class="splide__slide"><img src="imgs/carro3.jpg" alt="Restauração de veículo" loading="lazy">
+                    </li>
+                    <li class="splide__slide"><img src="imgs/carro4.jpg" alt="Acabamento automotivo premium"
+                            loading="lazy"></li>
                 </ul>
             </div>
         </section>
@@ -88,7 +115,7 @@
             <li>(11) 96070-8547</li>
         </ul>
 
-        <img src="imgs/logo-footer.png" alt="">
+        <img src="imgs/logo-footer.png" alt="JR Funilaria e Pintura">
     </footer>
 </body>
 
