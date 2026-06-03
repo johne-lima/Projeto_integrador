@@ -1,0 +1,67 @@
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.452), rgb(0, 0, 0)), url("../imgs/fundo-home.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 50px 25px;
+    position: relative;
+}
+
+.whatsapp {
+    display: flex;
+    align-items: center;
+    background: #0c0c0c;
+    border: 1px solid #333;
+    margin: 20px;
+    padding: 25px;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.whatsapp a {
+    display: block;
+    background: #25D366;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 16px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.whatsapp i {
+    margin-right: 20px;
+}
+
+.whatsapp .ajuste {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #0c0c0c;
+    border: 1px solid #222;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 16px;
+}
+
+.card .destaque {
+    font-weight: bold;
+    color: #c99404;
+}
+
+.card p {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+}

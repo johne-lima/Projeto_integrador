@@ -1,10 +1,94 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
+    <title>Contato - JR Funilaria</title>
+    <link rel="stylesheet" href="css/padrao.css">
+    <link rel="stylesheet" href="css/contato.css">
+
+    <!-- ICONES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            background: #000;
+            color: #fff;
+        }
+
+        .logo {
+            width: 120px;
+        }
+
+        .tag {
+            color: #FFC012;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #FFC012;
+        }
+
+        .hero p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+
+
+        .formulario {
+            background: #0c0c0c;
+            border: 1px solid #222;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 16px;
+        }
+
+        .formulario h2 {
+            margin-bottom: 20px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 15px;
+            background: #111;
+            border: 1px solid #333;
+            color: white;
+            border-radius: 8px;
+        }
+
+        textarea {
+            height: 120px;
+            resize: none;
+        }
+
+        button {
+            width: 100%;
+            background: #FFC012;
+            color: #000;
+            border: none;
+            padding: 16px;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
 </head>
+
 <body>
     <nav>
         <a href="index.html">
@@ -18,14 +102,89 @@
 
         <div class="menu">
             <ul>
-                <li><a href="index.html" class="home">Home</a></li>
+                <li><a href="index.html" class="ativo">Home</a></li>
                 <li><a href="servicos.html">Serviços</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="contato.html">Contato</a></li>
             </ul>
         </div>
     </nav>
-    <main>
-        
-    </main>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="tag">CONTATO</div>
+
+            <h1>
+                Fale com a <br>
+                <span>JR Funilaria</span>
+            </h1>
+
+            <p>
+                Estamos prontos para atender você e devolver
+                a beleza do seu veículo com qualidade e compromisso.
+            </p>
+        </div>
+    </section>
+    <div class="whatsapp">
+        <i class="fa-brands fa-whatsapp fa-2xl" style="color: rgb(37, 211, 102);"></i>
+        <div class="ajuste">
+            <h2>Falar no WhatsApp</h2>
+            <p>Envie fotos do veículo e receba uma avaliação rápida.</p>
+        </div>
+        <i class="fa-solid fa-angle-right fa-lg" style="color: rgb(255, 192, 18);"></i>
+    </div>
+
+    <div class="card">
+        <i class="fa-solid fa-location-dot fa-lg" style="color: rgb(255, 192, 18);"></i>
+        <h2>Endereço</h2>
+        <p>
+            <span class="destaque">JR Funilaria e Pintura</span><br>
+            Rua das Oficinas, 123<br>
+            São Paulo - SP
+        </p>
+    </div>
+
+    <div class="card">
+        <i class="fa-regular fa-clock" style="color: rgb(255, 192, 18);"></i>
+        <h2>Horário</h2>
+        <p>
+            Segunda a Sexta: <span class="destaque">08h às 18h</span><br>
+            Sábado: <span class="destaque">08h às 13h</span><br>
+            Domingo: <span class="destaque">Fechado</span>
+        </p>
+    </div>
+
+    <div class="card">
+        <i class="fa-solid fa-phone" style="color: rgb(255, 192, 18);"></i>
+        <h2>Telefone/WhatsApp</h2>
+        <p>(11) 99999-9999</p>
+    </div>
+
+    <section class="formulario">
+        <h2>Envie sua Mensagem</h2>
+
+        <input type="text" placeholder="Nome">
+
+        <input type="tel" placeholder="Telefone / WhatsApp">
+
+        <input type="text" placeholder="Serviço desejado">
+
+        <textarea placeholder="Mensagem"></textarea>
+
+        <button>ENVIAR MENSAGEM</button>
+    </section>
+
+    <footer>
+        <p class="descricao">Oficina especializada em Funilaria,</p>
+        <p>Pintura e Restaurações</p>
+
+        <h2>CONTATO</h2>
+        <ul>
+            <li>Rua Otacílio de Albuquerque 82, Vila Maria Alta - SP </li>
+            <li>(11) 96070-8547</li>
+        </ul>
+
+        <img src="imgs/logo-footer.png" alt="JR Funilaria e Pintura">
+    </footer>
 </body>
+
 </html>
