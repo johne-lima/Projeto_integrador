@@ -13,7 +13,6 @@ menuBtn.addEventListener('click', () => {
 })
 
 new Splide('.splide', {
-    type: 'slide',
     rewind: true,
     autoplay: true,
     interval: 2000,
