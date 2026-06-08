@@ -96,7 +96,7 @@
 .subtitulo-comparacao {
     text-align: center;
     color: #bdbdbd;
-    margin-bottom: 30px;
+    margin: 0 auto 26px;
 }
 
 .linha {
@@ -115,38 +115,66 @@
 .imagem {
     position: relative;
     overflow: hidden;
+    border-radius: 12px;
+    padding: 5px;
+}
 
-    background: linear-gradient(
-        135deg,
-        rgba(255,255,255,.08),
-        rgba(255,255,255,.02)
+.imagem::before {
+    content: "";
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    top: -75%;
+    left: -75%;
+
+    background: conic-gradient(
+        #8f6b00,
+        #ffd700,
+        #fff1a6,
+        #ffd700,
+        #8f6b00
     );
+
+    animation: girarBorda 4s linear infinite;
 }
 
 .imagem img {
+    position: relative;
+    display: block;
     width: 100%;
-    border-radius: 20px;
-    border: 2px solid #c99404;
-
-    box-shadow:
-        0 0 20px rgba(201,148,4,.3),
-        0 10px 30px rgba(0,0,0,.5);
+    border-radius: 9px;
+    z-index: 2;
 }
 
+@keyframes girarBorda {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
 
 .badge {
     position: absolute;
     top: 15px;
     left: 15px;
 
-    background: #c99404;
+    background: #c99404d7;
     color: black;
 
     font-size: .8rem;
     font-weight: bold;
 
     padding: 8px 15px;
-    border-radius: 30px;
+    border-radius: 5px;
+    text-shadow: 0 0 5px rgba(255,255,255,.3);
+}
+
+.badge,
+.resultado {
+    z-index: 3;
 }
 
 .resultado {
@@ -170,8 +198,12 @@
 
 .seta {
     text-align: center;
-    color: #c99404;
+    color: #e7ab03;
     font-size: 2rem;
+}
+
+.seta i {
+    animation: pular 1.2s ease-in-out infinite;
 }
 
 .cta-servicos {
@@ -194,7 +226,7 @@
 
 .cta-servicos p {
     color: #d8d8d8;
-    margin-bottom: 25px;
+    margin: 0 auto 26px;
 }
 
 .btn-whatsapp {
@@ -247,7 +279,18 @@
 
     .seta i {
         transform: rotate(-90deg);
+        animation: pularDesktop 1.2s ease-in-out infinite;
     }
+
+    @keyframes pularDesktop {
+    0%, 100% {
+        transform: rotate(-90deg) translateY(0);
+    }
+
+    50% {
+        transform: rotate(-90deg) translateY(-10px);
+    }
+}
 }
 
 /* Animações */
@@ -260,6 +303,28 @@
         background-color: #eec452;
         color: black;
     }   
+}
+
+@keyframes pular {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    20% {
+        transform: translateY(-15px);
+    }
+
+    40% {
+        transform: translateY(0);
+    }
+
+    60% {
+        transform: translateY(-8px);
+    }
+
+    80% {
+        transform: translateY(0);
+    }
 }
 
 @media (min-width: 600px) {

@@ -23,7 +23,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     background-color: rgb(0, 0, 0);
-    padding: 10px;
+    padding: 15px 25px;
     height: 70px;
 
     position: sticky;
@@ -34,6 +34,7 @@ nav {
 
 nav #logo {
     width: 100px;
+    cursor: pointer;
 }
 
 .menu_btn {
@@ -41,6 +42,8 @@ nav #logo {
     border: none;
     margin: 20px;
 
+    margin-left: auto;
+    
     color: white;
     font-size: 15px;
 }
@@ -164,7 +167,12 @@ footer img {
     width: 150px;
 }
 
-
+.animacao-lenta {
+    --animate-duration: 3s;
+}
+.animacao-calma {
+    --animate-duration: 2s;
+}
 
 /* medias queries padrões */
 

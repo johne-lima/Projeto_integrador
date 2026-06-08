@@ -40,3 +40,28 @@ new Splide('.splide', {
     }
 
 }).mount()
+
+
+const form = document.querySelector('.formulario')
+
+form.addEventListener('submit', e => {
+    e.preventDefault()
+    
+    const nome = document.querySelector('#nome').value
+    const servico = document.querySelector('#servico').value
+    const mensagem = document.querySelector('#mensagem').value
+
+    const texto = `
+    *Solicitação de Orçamento*
+    
+    👤 Nome: ${nome}
+    🪄 Serviço: ${servico}
+
+    📝 Mensagem: ${mensagem}
+    `
+
+    const wpp = '5511960708547'
+    const url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`
+
+    window.open(url, "_blank")
+})

@@ -1,58 +1,62 @@
 .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.521), rgb(0, 0, 0)), url("../imgs/fundo-contato.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.521), rgb(0, 0, 0)),
+        url("../imgs/fundo-contato.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 60%;
+    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    padding: 50px 25px;
-    position: relative;
+    padding: 80px 25px;
 }
 
-.whatsapp {
+.whatsapp,
+.card {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: #0c0c0c;
     border: 1px solid #333;
     margin: 20px;
-    padding: 10px;
+    padding: 15px;
     border-radius: 16px;
     cursor: pointer;
+    gap: 15px;
 }
 
-
-i.icon{
+.icon {
     font-size: 40px;
-    margin-right: 20px;
+    flex-shrink: 0;
 }
 
 .card i.fa-angle-right {
     margin: 0 15px;
 }
 
-.whatsapp .ajuste {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.ajuste {
+    flex: 1;
 }
 
+
+
 .ajuste h2 {
-    margin: 0;
-    font-size: 1.2rem;
+    margin: 0 0 5px;
+    font-size: 1.1rem;
     color: #fff;
-    margin-bottom: 5px;
 }
 
 .ajuste p {
-    font-size: 14px;
     color: #888;
+    line-height: 1.5;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
 }
 
 .card {
-     display: flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     background: #0c0c0c;
@@ -71,7 +75,6 @@ i.icon{
 .card p {
     display: flex;
     flex-direction: column;
-    line-height: 1.6;
 }
 
 .formulario {
@@ -80,6 +83,9 @@ i.icon{
     margin: 20px;
     padding: 20px;
     border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .formulario h2 {
@@ -102,7 +108,7 @@ textarea {
     resize: none;
 }
 
-button {
+.formulario button {
     width: 100%;
     background: #FFC012;
     color: #000;
@@ -112,4 +118,88 @@ button {
     font-weight: bold;
     font-size: 16px;
     cursor: pointer;
+}
+
+/* TABLETS */
+@media (min-width: 768px) {
+    .hero {
+        padding: 120px 60px;
+    }
+
+    .hero-content {
+        max-width: 600px;
+    }
+
+    .hero h1 {
+        font-size: 55px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .whatsapp,
+    .card {
+        margin: 0;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+
+    .whatsapp,
+    .card {
+        padding: 20px 25px;
+    }
+
+    .formulario {
+        padding: 35px;
+    }
+
+    .hero h1 {
+        font-size: 70px;
+    }
+
+    input,
+    textarea,
+    .formulario button {
+        width: 50%;
+    }
+}
+
+/* CELULARES MUITO PEQUENOS */
+@media (max-width: 480px) {
+
+    .whatsapp,
+    .card {
+        padding: 12px;
+        gap: 10px;
+        margin: 10px;
+    }
+
+    .icon {
+        font-size: 30px;
+    }
+
+    .ajuste h2 {
+        font-size: 1rem;
+    }
+
+    .ajuste p {
+        font-size: 13px;
+    }
+
+    .card i.fa-angle-right,
+    .whatsapp i.fa-angle-right {
+        display: none;
+    }
 }

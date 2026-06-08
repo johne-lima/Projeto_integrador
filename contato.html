@@ -72,62 +72,63 @@
             </p>
         </div>
     </section>
-    <div class="whatsapp">
-        <i class="fa-brands fa-whatsapp icon" style="color: rgb(37, 211, 102);"></i>
-        <div class="ajuste">
-            <h2>Falar no WhatsApp</h2>
-            <p>Envie fotos do veículo e receba uma avaliação rápida.</p>
+    
+    <div class="cards">
+        <div class="whatsapp">
+            <i class="fa-brands fa-whatsapp icon" style="color: rgb(37, 211, 102);"></i>
+            <div class="ajuste">
+                <h2>Falar no WhatsApp</h2>
+                <p>Envie fotos do veículo e receba uma avaliação rápida.</p>
+            </div>
+            <i class="fa-solid fa-angle-right" style="color: rgb(255, 192, 18);"></i>
         </div>
-        <i class="fa-solid fa-angle-right" style="color: rgb(255, 192, 18);"></i>
-    </div>
-
-    <div class="card">
-        <i class="fa-solid fa-location-dot icon" style="color: rgb(255, 192, 18);"></i>
-        <div class="ajuste">
-            <h2>Endereço</h2>
-            <p>
-                <span class="destaque">JR Funilaria e Pintura</span>
-                Rua das Oficinas, 123<br>
-                São Paulo - SP
-            </p>
+        <div class="card">
+            <i class="fa-solid fa-location-dot icon" style="color: rgb(255, 192, 18);"></i>
+            <div class="ajuste">
+                <h2>Endereço</h2>
+                <p>
+                    <span class="destaque">JR Funilaria e Pintura</span>
+                    Rua Otacílio de Albuquerque 82, Vila Maria Alta<br>
+                    São Paulo - SP
+                </p>
+            </div>
+            <i class="fa-solid fa-angle-right" style="color: rgb(255, 192, 18);"></i>
         </div>
-        <i class="fa-solid fa-angle-right" style="color: rgb(255, 192, 18);"></i>
-    </div>
-
-    <div class="card">
-        <i class="fa-regular fa-clock icon" style="color: rgb(255, 192, 18);"></i>
-        <div class="ajuste">
-            <h2>Horário</h2>
-            <p>
-                Segunda a Sexta: <span class="destaque">08h às 18h</span>
-                Sábado: <span class="destaque">08h às 13h</span>
-                Domingo: <span class="destaque">Fechado</span>
-            </p>
+        <div class="card">
+            <i class="fa-regular fa-clock icon" style="color: rgb(255, 192, 18);"></i>
+            <div class="ajuste">
+                <h2>Horário</h2>
+                <p>
+                    Segunda a Sexta: <span class="destaque">08h às 18h</span>
+                    Sábado: <span class="destaque">08h às 13h</span>
+                    Domingo: <span class="destaque">Fechado</span>
+                </p>
+            </div>
+            <i class="fa-solid fa-angle-right" style="color: rgb(255, 192, 18);"></i>
         </div>
-        <i class="fa-solid fa-angle-right" style="color: rgb(255, 192, 18);"></i>
-    </div>
-
-    <div class="card">
-        <i class="fa-solid fa-phone icon" style="color: rgb(255, 192, 18);"></i>
-        <div class="ajuste">
-            <h2>Telefone/WhatsApp</h2>
-            <p>(11) 99999-9999</p>
+        <div class="card">
+            <i class="fa-solid fa-phone icon" style="color: rgb(255, 192, 18);"></i>
+            <div class="ajuste">
+                <h2>Telefone/WhatsApp</h2>
+                <p>(11) 96070-8547</p>
+            </div>
+            <i class="fa-solid fa-angle-right" style="color: rgb(255, 192, 18);"></i>
         </div>
-        <i class="fa-solid fa-angle-right" style="color: rgb(255, 192, 18);"></i>
     </div>
 
     <section class="formulario">
         <h2>Envie sua Mensagem</h2>
 
-        <input type="text" placeholder="Nome">
+        <input type="text" placeholder="Nome" id="nome" required>
 
-        <input type="tel" placeholder="Telefone / WhatsApp">
+        <input type="text" placeholder="Serviço desejado" id="servico" required>
 
-        <input type="text" placeholder="Serviço desejado">
+        <textarea placeholder="Mensagem" id="mensagem" required></textarea>
 
-        <textarea placeholder="Mensagem"></textarea>
-
-        <button><i class="fa-solid fa-paper-plane" style="color: rgb(0, 0, 0);"></i> ENVIAR MENSAGEM</button>
+        <button type="submit" id="enviar">
+            <i class="fa-solid fa-paper-plane" style="color: rgb(0, 0, 0);"></i> 
+            ENVIAR MENSAGEM
+        </button>
     </section>
 
     <footer>
