@@ -12,56 +12,56 @@ menuBtn.addEventListener('click', () => {
 
 })
 
-new Splide('.splide', {
-    rewind: true,
-    autoplay: true,
-    interval: 2000,
+const splideElement = document.querySelector('.splide');
 
-    perPage: 3,
-    focus: 'center',
-    gap: '1rem',
-    padding: '15%',
-    drag: true,
-    snap: true,
-    updateOnMove: true,
-    waitForTransition: true,
+if (splideElement) {
+    new Splide('.splide', {
+        rewind: true,
+        autoplay: true,
+        interval: 2000,
 
-    breakpoints: {
+        perPage: 3,
+        focus: 'center',
+        gap: '1rem',
+        padding: '15%',
+        drag: true,
+        snap: true,
+        updateOnMove: true,
+        waitForTransition: true,
 
-        768: {
-            perPage: 1,
-            padding: '10%',
-        },
+        breakpoints: {
+            768: {
+                perPage: 1,
+                padding: '10%',
+            },
 
-        480: {
-            perPage: 1.001,
+            480: {
+                perPage: 1.001,
+            }
         }
+    }).mount();
+}
 
-    }
+const form = document.querySelector('.formulario');
 
-}).mount()
+if (form) {
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
 
+        const nome = document.querySelector('#nome').value;
+        const servico = document.querySelector('#servico').value;
+        const mensagem = document.querySelector('#mensagem').value;
 
-const form = document.querySelector('.formulario')
+        const texto = `*Solicitação de Orçamento*
 
-form.addEventListener('submit', e => {
-    e.preventDefault()
-    
-    const nome = document.querySelector('#nome').value
-    const servico = document.querySelector('#servico').value
-    const mensagem = document.querySelector('#mensagem').value
+👤 Nome: ${nome}
+🪄 Serviço: ${servico}
 
-    const texto = `
-    *Solicitação de Orçamento*
-    
-    👤 Nome: ${nome}
-    🪄 Serviço: ${servico}
+📝 Mensagem: ${mensagem}`;
 
-    📝 Mensagem: ${mensagem}
-    `
+        const wpp = '5511970798502';
+        const url = `https://wa.me/${wpp}?text=${encodeURIComponent(texto)}`;
 
-    const wpp = '5511970798502'
-    const url = `https://wa.me/${wpp}?text=${encodeURIComponent(texto)}`
-
-    window.open(url, "_blank")
-})
+        window.open(url, '_blank');
+    });
+}
