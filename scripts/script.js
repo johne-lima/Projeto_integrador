@@ -60,7 +60,7 @@ form.addEventListener('submit', e => {
     📝 Mensagem: ${mensagem}
     `
 
-    const wpp = '5511960708547'
+    const wpp = '5511970798502'
     const url = `https://wa.me/${wpp}?text=${encodeURIComponent(texto)}`
 
     window.open(url, "_blank")
