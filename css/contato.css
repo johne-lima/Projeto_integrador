@@ -10,6 +10,32 @@
     padding: 80px 25px;
 }
 
+.tag {
+    color: #FFC012;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 35px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #FFC012;
+}
+
+.hero p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.whatsapp {
+    text-decoration: none;
+}
+
 .whatsapp,
 .card {
     display: flex;
@@ -22,6 +48,42 @@
     border-radius: 16px;
     cursor: pointer;
     gap: 15px;
+
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    transition: color 0.3s ease;
+}
+
+.whatsapp::before,
+.card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #ffc012c7;
+
+    transform: scaleX(0);
+    transform-origin: left;
+
+    transition: transform 1.5s ease;
+    z-index: -1;
+}
+
+.whatsapp:hover::before,
+.card:hover::before {
+    transform: scaleX(1);
+}
+
+.whatsapp:hover h2,
+.whatsapp:hover p,
+.whatsapp:hover #telefone,
+.card:hover h2,
+.card:hover p,
+.card:hover .destaque,
+.card:hover i,
+.whatsapp:hover i {
+    color: #000 !important;
 }
 
 .icon {
@@ -31,6 +93,10 @@
 
 .card i.fa-angle-right {
     margin: 0 15px;
+}
+
+a.ajuste {
+    text-decoration: none;
 }
 
 .ajuste {
@@ -48,6 +114,11 @@
 .ajuste p {
     color: #888;
     line-height: 1.5;
+}
+
+p #telefone {
+    color: #888;
+    font-weight: bold;
 }
 
 .cards {
