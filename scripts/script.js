@@ -12,35 +12,49 @@ menuBtn.addEventListener('click', () => {
 
 })
 
-const splideElement = document.querySelector('.splide');
+const splide = new Splide('.splide', {
+    rewind: true,
+    autoplay: true,
+    interval: 2000,
 
-if (splideElement) {
-    new Splide('.splide', {
-        rewind: true,
-        autoplay: true,
-        interval: 2000,
+    perPage: 2,
+    focus: 'center',
+    gap: '1rem',
+    padding: '15%',
 
-        perPage: 3,
-        focus: 'center',
-        gap: '1rem',
-        padding: '15%',
-        drag: true,
-        snap: true,
-        updateOnMove: true,
-        waitForTransition: true,
+    drag: true,
+    snap: true,
+    updateOnMove: true,
+    waitForTransition: true,
 
-        breakpoints: {
-            768: {
-                perPage: 1,
-                padding: '10%',
-            },
+    breakpoints: {
+        768: {
+            perPage: 2,
+            padding: '10%',
+        },
 
-            480: {
-                perPage: 1.001,
-            }
+        500: {
+            perPage: 1,
+            padding: '5%',
         }
-    }).mount();
-}
+    }
+});
+
+splide.mount();
+
+document.querySelectorAll('.splide__slide').forEach((slide, index) => {
+    slide.style.cursor = 'pointer';
+
+    slide.addEventListener('click', () => {
+        splide.go(index);
+    });
+});
+
+document.querySelectorAll('.splide__slide').forEach(slide => {
+    slide.addEventListener('click', () => {
+        splide.go(Number(slide.dataset.slide));
+    });
+});
 
 const form = document.querySelector('.formulario');
 

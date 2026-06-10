@@ -13,9 +13,6 @@
     <link rel="stylesheet" href="css/home.css">
     <script src="scripts/script.js" defer></script>
 
-    <!-- CANONICAL (quando lançar o site) -->
-    <link rel="canonical" href="https://www.jrfunilaria.com.br/">
-
     <!-- ICONES -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
@@ -34,22 +31,6 @@
         integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "AutoBodyShop",
-            "name": "JR Funilaria e Pintura",
-            "telephone": "+55 11 96070-8547",
-            "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Rua Otacílio de Albuquerque, 82",
-                "addressLocality": "São Paulo",
-                "addressRegion": "SP",
-                "addressCountry": "BR"
-            }
-        }
-    </script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -61,7 +42,7 @@
             <img src="imgs/logo1.png" id="logo" alt="Logo JR Funilaria e Pintura">
         </a>
 
-        <button class="menu_btn">
+        <button class="menu_btn" aria-label="Abrir menu" aria-expanded="false">
             <i class="fa-solid fa-bars icon-menu active-icon"></i>
             <i class="fa-solid fa-x icon-close"></i>
         </button>
@@ -76,14 +57,18 @@
     </nav>
 
     <main>
-        <img src="imgs/logo1.png" class="logo animate__animated animate__fadeInDown animacao-calma" alt="Logo JR Funilaria e Pintura">
-        <h1 class="animate__animated animate__fadeIn animacao-calma">Funilaria, Pintura e Restauração Automotiva em São Paulo</h1>
+        <img src="imgs/logo1.png" class="logo animate__animated animate__fadeInDown animacao-calma"
+            alt="Logo JR Funilaria e Pintura" class="logo" width="300" height="300" fetchpriority="high">
+        <h1 class="animate__animated animate__fadeIn animacao-calma">Funilaria, Pintura e Restauração Automotiva em São
+            Paulo</h1>
 
-        <h2 class="texto-primario animate__animated animate__fadeIn animacao-calma">Na JR Funilaria e Pintura, cada carro recebe mais do que um serviço — recebe
+        <h2 class="texto-primario animate__animated animate__fadeIn animacao-calma">Na JR Funilaria e Pintura, cada
+            carro recebe mais do que um serviço — recebe
             dedicação, cuidado e paixão pelo
             que faço.</h2>
 
-        <p class="animate__animated animate__fadeIn animacao-calma">Trabalhando sozinho, realizo cada etapa com atenção aos detalhes, buscando sempre entregar um resultado
+        <p class="animate__animated animate__fadeIn animacao-calma">Trabalhando sozinho, realizo cada etapa com atenção
+            aos detalhes, buscando sempre entregar um resultado
             impecável. O reconhecimento dos clientes vem justamente pela confiança e pela qualidade, porque aqui a meta
             é sempre entregar mais do que o esperado.</p>
 
@@ -99,22 +84,34 @@
         </a>
 
         <section class="splide">
+            <h2 class="slide-title">Nossos Serviços</h2>
             <div class="splide__track">
                 <ul class="splide__list">
                     <li class="splide__slide"><img src="imgs/carro1.webp"
-                            alt="Serviço de funilaria automotiva realizado pela JR Funilaria" loading="lazy"></li>
+                            alt="Serviço de funilaria automotiva realizado pela JR Funilaria" loading="lazy"
+                            data-slide="0"></li>
                     <li class="splide__slide"><img src="imgs/carro2.webp" alt="Pintura automotiva profissional"
-                            loading="lazy"></li>
-                    <li class="splide__slide"><img src="imgs/carro3.jpg" alt="Restauração de veículo" loading="lazy">
-                    </li>
+                            loading="lazy" data-slide="1"></li>
+                    <li class="splide__slide"><img src="imgs/carro3.jpg" alt="Restauração de veículo" loading="lazy"
+                            data-slide="2"></li>
                     <li class="splide__slide"><img src="imgs/carro4.jpg" alt="Acabamento automotivo premium"
-                            loading="lazy"></li>
+                            loading="lazy" data-slide="3"></li>
                     <li class="splide__slide"><img src="imgs/carro5.webp" alt="Acabamento automotivo premium"
-                            loading="lazy"></li>
+                            loading="lazy" data-slide="4"></li>
                     <li class="splide__slide"><img src="imgs/carro6.webp" alt="Acabamento automotivo premium"
-                            loading="lazy"></li>
+                            loading="lazy" data-slide="5"></li>
                 </ul>
             </div>
+        </section>
+        <section class="seo-local">
+            <h2>Funilaria e Pintura na Zona Norte de São Paulo</h2>
+
+            <p>
+                A JR Funilaria e Pintura atende clientes de toda a região da Vila Maria,
+                Vila Guilherme, Vila Medeiros, Santana e bairros próximos,
+                oferecendo serviços de funilaria, pintura automotiva e restauração
+                com acabamento profissional.
+            </p>
         </section>
     </main>
 
