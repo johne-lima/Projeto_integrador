@@ -55,6 +55,9 @@
 
     transition: color 0.3s ease;
 }
+.horario{
+    cursor: default;
+}
 
 .whatsapp::before,
 .card::before {
